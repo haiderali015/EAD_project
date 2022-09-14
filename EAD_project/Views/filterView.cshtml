@@ -1,0 +1,41 @@
+﻿@using EAD_project.Models
+@model List<roomsdata>
+@{
+    Layout="~/Views/Shared/header.cshtml";
+}
+@*<body>
+        @foreach(var i in Model)
+        {
+            @Html.Partial("roomsPartialView",i)
+
+        }
+
+ </body>*@
+
+    @*<script>
+        $(() => {
+            getrooms();
+
+            $('#txtSearch').on('keyup' , () =>{
+                getrooms();
+            });
+        });
+
+        function getrooms(){
+            $.ajax({
+                url: 'Url.Action("searchRooms" , Booking)',
+                dataType: 'html',
+                method:'GET',
+                data: {searchTxt : $('#txtSearch').val()},
+                success: function (res) {
+                    $('#grdrooms').html('').html(res);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+
+            })
+        }
+
+    </script>
+*@

@@ -1,0 +1,148 @@
+﻿@using EAD_project.Models;
+@section section{
+    <h3>Room Booking</h3>
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!--  CSS File -->
+  <link rel="stylesheet" href="~/css/site.css" >
+ 
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pearl Inn Hotel</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+      <style>
+          .social-links a
+          {
+              text-decoration: none;
+          }
+          .social-links
+          {
+              margin-right:10px;
+          }
+      </style>
+
+ 
+
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+  @*@Html.Partial("~/Views/Shared/_partialViewHeader.cshtml")*@
+     <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center" style="background-color:#221E1E">
+    <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="homepage">Home</a></li>
+          <li><a href="Branches" style="text-decoration:none">Branches</a></li>          
+          <li><a href="contact" style="text-decoration:none">Contact</a></li>
+          <li><a href="reviews" style="text-decoration:none">Guest Reviews</a></li>
+
+
+
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Guest Reviews</a></li>
+          <li><a  style="visibility:hidden">Gues</a></li>
+          <li><a  style="visibility:hidden">Guest </a></li>
+          <li><a  style="visibility:hidden">g </a></li>
+          
+
+
+          <li> <a asp-action="Signout" style="
+                                        text-decoration:none; transition-duration: 0.4s;
+                                        background-color: #DC143C;
+                                        border: none;
+                                        border-radius:9px;
+                                        color: white;
+                                        padding: 10px 28px;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        display: inline-block;
+                                        font-size: 16px;
+                                        margin: 4px 2px;
+                                        transition-duration: 0.4s;
+                                        cursor: pointer;">Log Out</a></li>
+          <li><a  style="visibility:hidden">is</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+      @RenderBody()
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            @RenderSection("section",required:false)
+            <p>Pearl-Inn Hotels & Resorts have always achieved excellent international standards of quality products & services. The Group is consistently focused on enhancing its brand & creating memorable experiences for people.
+
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+           
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+          
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Pakistan
+              <strong>Phone:</strong> 090078601<br>
+              <strong>Email:</strong> haider@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Pearl Inn Hotel And Resorts</strong>. All Rights Reserved
+      </div>
+     
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Template Main JS File -->
+   @*<script src="~/js/site.js"></script>*@
+ 
+
+</body>
+
+</html>

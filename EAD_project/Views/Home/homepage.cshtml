@@ -1,0 +1,75 @@
+﻿@{
+    Layout="~/Views/Shared/header.cshtml";
+}
+@using EAD_project.Models;
+@section section{
+    <h3>Home</h3>
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!--  CSS File -->
+   
+  <link rel="stylesheet" href="~/css/site.css" >
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+ 
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pearl Inn Hotel</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+ 
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  @*@Html.Partial("~/Views/Shared/_partialViewHeader.cshtml")*@
+
+@*header and footer is on header.cshtml*@
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+   <img src="~/images/lobby.jpg" style="height:800px; width:1500px"/>
+
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">Welcome to<br><span>Pearl Inn</span> Hotel</h1>
+      <p class="mb-4 pb-0">The project of Haider Rajpoot</p>
+      
+      <a href="#about" class="about-btn scrollto">About Pearl Inn </a>
+    </div>
+  </section><!-- End Hero Section -->
+
+    <!----------------------------------- Partial View --------------------------------->
+@*   <div>
+       <input type="button" id="b1" value="loadnews" />
+       <div id="partialPlaceHolder">
+
+       </div>
+   </div>*@
+       <!----------------------------------- Partial View --------------------------------->
+
+
+  
+ @* <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>*@
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

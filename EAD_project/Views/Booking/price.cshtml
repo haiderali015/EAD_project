@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout="~/Views/Shared/header.cshtml";
+}
+<html>
+    <head>
+          <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+    </head>
+
+    <body>
+        <br /><br />
+    <section id="buy-tickets" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Book This Room</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Suite Room</h5>
+                <h6 class="card-price text-center">Rs 85,000</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Comfortable Bed</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Comfortable Sofas</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Food service</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>7 star Luxury</li>
+                 
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section><!-- End Book room Section -->
+    </body>
+
+</html>

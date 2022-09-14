@@ -1,0 +1,64 @@
+﻿@using EAD_project.Models;
+@model adminClass
+<head>
+    <link rel="stylesheet" href="~/css/admin.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                 
+                  <h4 class="mt-1 mb-5 pb-1">We are The Pearl INN Team</h4>
+                </div>
+
+                <form action="/admin/adminView" method="post">
+                    <div asp-validation-summary="ModelOnly"></div>
+                  <p>Please login to your account</p>
+
+                  <div class="form-outline mb-4">
+                    <input asp-for="email" id="form2Example22" type="text" class="form-control" placeholder=" enter email" required="required" maxlength="255" value="" >
+                    <label class="form-label" for="form2Example22">Email</label>  
+                </div>
+
+                  <div class="form-outline mb-4">
+                    <input asp-for="password" id="login-password" type="password" class="form-control" placeholder=" enter password" required="required">
+                    <label class="form-label" for="form2Example22">Password</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
+                      in</button>
+                    <a class="text-muted" href="#!">Forgot password?</a>
+                  </div>
+
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">We are more than just a company</h4>
+                <p class="small mb-0">All the staff of Pearl Inn are just like Family.
+                    The CEO of Pearl Inn HAIDER RAJPOOT has done untire struggle to take
+                    the company to this level.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>

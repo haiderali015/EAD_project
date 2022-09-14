@@ -1,0 +1,92 @@
+﻿@using EAD_project.Models;
+@model roomsdata
+<head>
+    <link rel="stylesheet" href="~/css/admin.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    @* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a href="/ManageRoom/adminRooms"><button class="btn btn-outline-success my-2 my-sm-0">Click to see all rooms</button>
+  </div>
+</nav>*@
+
+<nav>
+   <button class="btn btn-outline-success my-2 my-sm-0"><a href="/ManageRoom/adminRooms">Click to see all rooms</a></button>
+</nav>
+
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+       
+        
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+
+                 
+                  <h4 class="mt-1 mb-5 pb-1">Manage Rooms</h4>
+                </div>
+
+                <form action="/ManageRoom/mRoom" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly"></div>
+                  <p>Enter Room info</p>
+
+                  <div class="form-outline mb-4">
+                    <input asp-for="roomNum" id="form2Example22" type="text" class="form-control" placeholder=" enter Room Number" required="required" maxlength="255" value="" >
+                    <label class="form-label" for="form2Example22">Room Number</label>  
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input asp-for="roomPrice" id="form2Example22" type="text" class="form-control" placeholder=" enter Room Price" required="required" maxlength="255" value="" >
+                    <label class="form-label" for="form2Example22">Room Price</label>  
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input asp-for="suite" id="form2Example22" type="text" class="form-control" placeholder=" Is This is a suite room or Deluxe?" required="required" maxlength="255" value="" >
+                    <label class="form-label" for="form2Example22">Suite or Deluxe?</label>  
+                </div>
+
+                  <div class="form-outline mb-4">
+                    <input asp-for="description" id="form2Example22" type="text" class="form-control" placeholder="Room Description" required="required">
+                    <label class="form-label" for="form2Example22">Room desc</label>
+                  </div>
+
+                  <div class="form-group">
+			        <span>Select File: </span>
+			        <input type="file" name="postedFiles"  multiple/> 
+			        <button type="submit">Upload File</button>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Add Room</button>
+                  </div>
+
+
+                </form>
+
+                 
+               
+              </div>
+            </div>
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>

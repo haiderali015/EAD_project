@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/shared/_Layout.cshtml";
+}
+<table border="2">
+        <thead>
+        <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Cnic</th>
+                <th>PhoneNumber</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach(var l in ViewBag.list)
+        {
+<tr>
+    <td>@l.name</td>
+    <td>@l.password</td>
+
+    <td>@l.cnic</td>
+    <td>@l.phoneNumber</td>
+</tr>
+        }
+        </tbody>
+</table>
